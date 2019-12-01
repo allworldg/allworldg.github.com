@@ -267,6 +267,18 @@
 </li>
 </ol>
 <hr>
+<h2 id="第三步-从本地发布到GitHub服务器上"><a href="#第三步-从本地发布到GitHub服务器上" class="headerlink" title="第三步 从本地发布到GitHub服务器上"></a>第三步 从本地发布到GitHub服务器上</h2><p>如果我们想将博客发布到网上，又不想去考虑流量安全问题，可以选择现有的免费的服务器进行搭载，在这里我使用的是GitHub服务器，接下来介绍流程。</p>
+<ol>
+<li>首先在GitHub上面创建一个仓库作为我们博客上传的位置，<strong>！！注意，用GitHub搭载博客的仓库，仓库名必须为”账号名+github.io”（我刚开始用的是.io，但是报错404，所以我改成了.com，输入网址还是输入io就成功了)，分支必须选择master</strong> ，创建好后保存一下SSH或者HTTPS。</li>
+<li>进入blog文件夹，打开_config.yml文件，在Deployment位置的repo那里对应输入以下代码：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">deploy:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  type: git</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  repo: 将之前复制的HTTPS或者SSH密钥粘贴进来</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  branch: master</span></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>在命令行输入<code>hexo d</code>就可以将博客上传到GitHub服务器上，然后在网址输入<code>username+github.io</code>就可以看到自己的博客界面了，一般GitHub更新比较慢，所以需要等等，如果出现404就请自行查看那一步出了步骤。</li>
+</ol>
+<hr>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>第一次write block，还没有考虑到版式规范，也还没有加入相关图片，比较粗糙，争取做到<strong>everyday writing</strong>。</p>
 
       
 
