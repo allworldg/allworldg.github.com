@@ -8,14 +8,14 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>我的第一篇博客文章 | 欢迎来到我的blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="First blog,will write something about hexo ….test  Item 1  Item 2  Item three">
+  <meta name="description" content="First blog,I will write something about hexo and write blog…. 概述Hexo是一个基于Node.js的用于制作简洁且高效博客的博客框架。Hexo使用Markdown标记语言来编写文本，然后利用配置好的主题样式生成静态网页。  hexo是制作博客的一个工具 它将我们用markdown语法写的文章生成html页面，然后通过搭载自己的服务器上传">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的第一篇博客文章">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;30&#x2F;%E6%88%91%E7%9A%84y%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0&#x2F;index.html">
 <meta property="og:site_name" content="欢迎来到我的blog">
-<meta property="og:description" content="First blog,will write something about hexo ….test  Item 1  Item 2  Item three">
+<meta property="og:description" content="First blog,I will write something about hexo and write blog…. 概述Hexo是一个基于Node.js的用于制作简洁且高效博客的博客框架。Hexo使用Markdown标记语言来编写文本，然后利用配置好的主题样式生成静态网页。  hexo是制作博客的一个工具 它将我们用markdown语法写的文章生成html页面，然后通过搭载自己的服务器上传">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-30T09:51:48.492Z">
+<meta property="og:updated_time" content="2019-12-01T03:59:30.668Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="欢迎来到我的blog" type="application/atom+xml">
@@ -172,16 +172,40 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="First-blog-will-write-something-about-hexo-…"><a href="#First-blog-will-write-something-about-hexo-…" class="headerlink" title="First blog,will write something about hexo …."></a>First blog,will write something about hexo ….</h1><p>test</p>
+        <h1 id="First-blog-I-will-write-something-about-hexo-and-write-blog…"><a href="#First-blog-I-will-write-something-about-hexo-and-write-blog…" class="headerlink" title="First blog,I will write something about hexo and write blog…."></a>First blog,I will write something about hexo and write blog….</h1><hr>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Hexo是一个基于Node.js的用于制作简洁且高效博客的博客框架。Hexo使用Markdown标记语言来编写文本，然后利用配置好的主题样式生成静态网页。</p>
 <ul>
-<li><p>Item 1</p>
-</li>
-<li><p>Item 2</p>
-</li>
-<li><p>Item three</p>
-</li>
-<li></li>
+<li>hexo是制作博客的一个工具</li>
+<li>它将我们用markdown语法写的文章生成html页面，然后通过搭载自己的服务器上传到网上。</li>
 </ul>
+<h2 id="第一步安装"><a href="#第一步安装" class="headerlink" title="第一步安装"></a>第一步安装</h2><p>要想写blog，首先我们需要准备好以下两个工具</p>
+<ul>
+<li>Node.js（运行在服务器的JavaScript）</li>
+<li>npm（包管理工具，解决Nodejs的部署问题）</li>
+<li>Git（一个开源的分布式管理系统，里面的git bash以后也可以代替cmd来使用）</li>
+</ul>
+<p>安装完后，git的配置在此先不谈，如果有需要的请通过Google或者度娘解决，因为之后需要借助GitHub服务器来进行博客的上传，所以请先配置好git。</p>
+<p>安装Node.js的时候，可以任意选存放地址，这次我安装选择的是D盘。安装完成后，可以在自己系统的命令行窗口输入</p>
+<blockquote>
+<p>npm -v</p>
+<p>node -v</p>
+</blockquote>
+<p>来查看当前npm和Nodejs的版本号，如果没有正常显示说明安装有问题或者环境变量设置的问题。检查完之后，因为npm包是国外的版本，在之后上传搭载可能比较耗时，所以我们需要下载国内淘宝的镜像文件，在命令行内输入下面一句代码</p>
+<blockquote>
+<p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code> </p>
+</blockquote>
+<p>进行下载，下载好后输入<code>cnpm -v</code>来查看版本号。安装完cnpm镜像文件后，我们就可以通过cnpm来下载hexo相关包了，在命令行内输入<code>npm install -g hexo-cli</code>进行全局下载（全局下载默认是c盘，想修改默认位置可以参考这个博客<a href="https://www.cnblogs.com/liaojie970/p/9296177.html" target="_blank" rel="noopener">https://www.cnblogs.com/liaojie970/p/9296177.html</a> ，进阶版就是在局部安装hexo包，详情参考<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo官方文档</a>)，下载完输入命令<code>hexo -v</code>来查看hexo版本号。在顺利完成以上步骤，我们基础的配置要求就已经设置完成了，如果有出现问题实在解决不了的可以删除重装，反正软件都不大。</p>
+<hr>
+<h2 id="第二步-创建博客并且发布到本地"><a href="#第二步-创建博客并且发布到本地" class="headerlink" title="第二步 创建博客并且发布到本地"></a>第二步 创建博客并且发布到本地</h2><ol>
+<li><p>设置一个目录作为以后写博客的位置。首先在自己指定的位置建立一个文件夹（我的文件夹名设置为blog），然后在当前目录下用命令行（命令行位置一定要指向当前文件夹）输入命令 <code>hexo init</code>来初始化hexo的配置，（需要网络，可能会有点卡，可以耐心等待，如果中途有卡住不动，可以敲击一下键盘或者点一下鼠标 试试。）下载成功后会发现文件夹内多了很多自动生成的文件，在此先不仔细分析，感兴趣的话可以自己摸索。</p>
+</li>
+<li><p>初始化好之后可以在本地运行一下hexo的服务，输入命令<code>hexo s</code>或者<code>hexo server</code>，生成本地的服务，在网页上输入hexo生成的指定端口号之后，可以看到生成的博客网页。然后在命令行下输入 <code>hexo n &quot;文章名字&quot;</code>,就可以在 <em>blog\source_posts</em> 目录下面找到刚刚生成的md文件，用文本编辑器打开，使用markdown语法就可以进行博客的书写了。写完保存，然后在blog目录下命令行输入<code>hexo g</code> 来进行文章的html文件生成并且发布到主页上。构建成功后使用<code>hexo s</code>来查看一下自己刚写的文章是否在博客上显示。</p>
+</li>
+<li><p>提到的常用语句 <code>hexo init</code>   <code>hexo n &quot;new title name&quot;</code>   <code>hexo g</code>   <code>hexo s</code> </p>
+<p>以上就是第二大步所需要的完整步骤</p>
+</li>
+</ol>
+<hr>
 
       
 
@@ -274,6 +298,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2019/11/30/%E6%B5%8B%E8%AF%95/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          测试
+        
+      </div>
+    </a>
   
   
     <a href="/2019/11/30/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
